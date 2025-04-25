@@ -1,49 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
+/* Загальні стилі */
 body {
-    font-family: 'Nunito', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fefaf5;
-    color: #4b3b30;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fefce8; /* світло-жовтий */
+  margin: 0;
+  padding: 0;
+  color: #111; /* темний текст */
 }
 
+/* Заголовки */
+h1, h2, h3 {
+  color: #000;
+}
+
+/* Навігація */
 nav {
-    background-color: #f8e8d6;
-    padding: 1em;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  background-color: #000; /* чорний */
+  padding: 15px;
 }
 
 nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #5e4b3c;
-    font-weight: bold;
-    font-size: 1.1em;
+  color: #ffeb3b; /* яскраво-жовтий */
+  margin-right: 15px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 nav a:hover {
-    color: #a76c45;
+  color: #4caf50; /* зелений */
 }
 
+/* Основний контейнер */
 main {
-    max-width: 900px;
-    margin: 2em auto;
-    padding: 2em;
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-h1 {
-    color: #8b5e3c;
+/* Картки товарів */
+.product-card {
+  background: #fffff0;
+  border: 2px solid #4caf50; /* зелений контур */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
 }
 
-footer {
-    text-align: center;
-    padding: 1em;
-    margin-top: 2em;
-    font-size: 0.9em;
-    color: #a28c7a;
+.product-card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.product-card h3 {
+  margin-top: 10px;
+  color: #1b5e20; /* темно-зелений */
+}
+
+.product-card p.price {
+  color: #ffeb3b; /* жовтий */
+  font-weight: bold;
+  font-size: 18px;
 }
